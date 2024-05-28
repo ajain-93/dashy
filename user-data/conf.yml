@@ -7,121 +7,59 @@ pageInfo:
       target: newtab
 appConfig:
   theme: colorful
-  layout: horizontal
-  iconSize: medium
+  layout: vertical
+  iconSize: large
 sections:
-  - name: Getting Started
-    icon: fas fa-rocket
-    items:
-      - title: Dashy Live
-        description: Development a project management links for Dashy
-        icon: https://i.ibb.co/qWWpD0v/astro-dab-128.png
-        url: https://live.dashy.to/
-        target: newtab
-        id: 0_1481_dashylive
-      - title: GitHub
-        description: Source Code, Issues and Pull Requests
-        url: https://github.com/lissy93/dashy
-        icon: favicon
-        id: 1_1481_github
-      - title: Docs
-        description: Configuring & Usage Documentation
-        provider: Dashy.to
-        icon: far fa-book
-        url: https://dashy.to/docs
-        id: 2_1481_docs
-      - title: Showcase
-        description: See how others are using Dashy
-        url: https://github.com/Lissy93/dashy/blob/master/docs/showcase.md
-        icon: far fa-grin-hearts
-        id: 3_1481_showcase
-      - title: Config Guide
-        description: See full list of configuration options
-        url: https://github.com/Lissy93/dashy/blob/master/docs/configuring.md
-        icon: fas fa-wrench
-        id: 4_1481_configguide
-      - title: Support
-        description: Get help with Dashy, raise a bug, or get in contact
-        url: https://github.com/Lissy93/dashy/blob/master/.github/SUPPORT.md
-        icon: far fa-hands-helping
-        id: 5_1481_support
-  - name: Tretflix
+  - name: Media
     icon: mdi-multimedia
     items:
-      - title: Files
-        icon: far fa-folder-tree
-        url: https://tret.jain.se/files/
-        id: 2_365_files
-      - title: SABnzbd
-        icon: hl-sabnzbd
-        url: https://tret.jain.se/sabnzbd/
-        target: newtab
-        id: 1_365_sabnzbd
+      - title: Just Watch
+        icon: si-trillertv
+        url: https://www.justwatch.com/se
+        id: 0_480_justwatch
+      - title: MyEpisodes
+        icon: mdi-television
+        url: https://www.myepisodes.com/
+        id: 1_480_myepisodes
       - title: Sonarr
         icon: hl-sonarr
         url: https://tret.jain.se/sonarr/calendar
         target: newtab
-        id: 3_365_sonarr
+        id: 2_480_sonarr
       - title: Radarr
         url: https://tret.jain.se/radarr/
         icon: hl-radarr
-        id: 6_365_radarr
+        id: 3_480_radarr
       - title: TV
         icon: fas fa-video
         url: https://tret.jain.se/files/TV/
         target: newtab
-        id: 4_365_tv
+        id: 4_480_tv
       - title: Movies
         icon: fas fa-film
         url: https://tret.jain.se/files/Movies/
         target: newtab
-        id: 5_365_movies
-  - name: SRV78 - Internal
-    icon: fas fa-server
+        id: 5_480_movies
+      - title: Files
+        icon: far fa-folder-tree
+        url: https://tret.jain.se/files/
+        id: 6_480_files
+      - title: MyEpisodes
+        icon: mdi-television
+        url: https://www.myepisodes.com/
+        id: 7_480_myepisodes
+      - title: SABnzbd
+        icon: hl-sabnzbd
+        url: https://tret.jain.se/sabnzbd/
+        target: newtab
+        id: 8_480_sabnzbd
     displayData:
       sortBy: default
       rows: 1
       cols: 1
       collapsed: false
       hideForGuests: false
-    items:
-      - title: Portainer
-        icon: hl-portainer
-        url: http://jain78:9000/
-        id: 0_362_portainer
-      - title: Files
-        icon: far fa-folder-tree
-        url: http://srv78:18000/files/
-        id: 2_362_files
-      - title: File Browser
-        icon: hl-filebrowser
-        url: http://srv78:8080/filebrowser/
-        id: 7_362_filebrowser
-      - title: SABnzbd
-        icon: hl-sabnzbd
-        url: http://srv78:18000/sabnzbd/
-        target: newtab
-        id: 1_362_sabnzbd
-      - title: Sonarr
-        icon: hl-sonarr
-        url: http://srv78:18000/sonarr/calendar
-        target: newtab
-        id: 3_362_sonarr
-      - title: Radarr
-        url: http://srv78:18000/radarr/
-        icon: hl-radarr
-        id: 6_362_radarr
-      - title: TV
-        icon: fas fa-video
-        url: http://srv78:18000/files/TV/
-        target: newtab
-        id: 4_362_tv
-      - title: Movies
-        icon: fas fa-film
-        url: http://srv78:18000/files/Movies/
-        target: newtab
-        id: 5_362_movies
-  - name: PiGallery - External
+  - name: PiGallery
     icon: fab fa-raspberry-pi
     displayData:
       sortBy: alphabetical
@@ -158,6 +96,106 @@ sections:
         icon: fab fa-raspberry-pi
         url: https://photos.jain.se/2324-ejolle-elitserie/gallery/
         id: 6_1849_ejolleelitserie
+
+  - name: Home Automation
+    icon: si-homeassistant
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: Main
+        description: Home Assistant Bridge
+        icon: si-homeassistant
+        url: https://ha.jain.se/lovelace/home
+        id: 0_1482_main
+      - title: Main - Internal
+        description: Home Assistant Bridge
+        icon: mdi-home-assistant
+        url: http://ha-bridge:8123/
+        id: 1_1482_maininternal
+      - title: 🚗
+        description: Home Assistant Azure Docker
+        icon: si-homeassistant
+        url: https://ha-az-he.jain.se/lovelace/car
+        id: 2_1482_
+      - title: Zigbee2MQTT
+        icon: mdi-zigbee
+        url: http://ha-bridge:8585/#/
+        id: 3_1482_zigbeemqtt
+      - title: Z-Wave JS
+        icon: mdi-z-wave
+        url: http://ha-bridge:8091/#/control-panel
+        id: 4_1482_zwavejs
+
+  - name: Docker
+    icon: si-portainer
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: HA Bridge
+        description: ''
+        icon: mdi-raspberry-pi
+        url: http://ha-bridge:9000/
+        id: 0_600_habridge
+      - title: SRV78
+        icon: mdi-server-network
+        url: http://jain78:9000/
+        id: 1_600_srv
+      - title: Azure
+        icon: mdi-microsoft-azure
+        url: https://portainer-az-he.jain.se/
+        id: 2_600_azure
+
+
+  - name: SRV78 - Internal
+    icon: fas fa-server
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: Files
+        icon: far fa-folder-tree
+        url: http://srv78:18000/files/
+        id: 0_1300_files
+      - title: File Browser
+        icon: hl-filebrowser
+        url: http://srv78:8080/filebrowser/
+        id: 1_1300_filebrowser
+      - title: SABnzbd
+        icon: hl-sabnzbd
+        url: http://srv78:18000/sabnzbd/
+        target: newtab
+        id: 2_1300_sabnzbd
+      - title: Sonarr
+        icon: hl-sonarr
+        url: http://srv78:18000/sonarr/calendar
+        target: newtab
+        id: 3_1300_sonarr
+      - title: Radarr
+        url: http://srv78:18000/radarr/
+        icon: hl-radarr
+        id: 4_1300_radarr
+      - title: TV
+        icon: fas fa-video
+        url: http://srv78:18000/files/TV/
+        target: newtab
+        id: 5_1300_tv
+      - title: Movies
+        icon: fas fa-film
+        url: http://srv78:18000/files/Movies/
+        target: newtab
+        id: 6_1300_movies
+
   - name: PiGallery - Internal
     icon: fab fa-raspberry-pi
     displayData:
