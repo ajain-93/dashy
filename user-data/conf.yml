@@ -1,47 +1,197 @@
----
-# Page meta info, like heading, footer text and nav links
 pageInfo:
   title: Dashy
-  description: Welcome to your new dashboard!
+  description: Arnav Jain
   navLinks:
-  - title: GitHub
-    path: https://github.com/Lissy93/dashy
-  - title: Documentation
-    path: https://dashy.to/docs
-
-# Optional app settings and configuration
+    - title: Documentation
+      path: https://dashy.to/docs
+      target: newtab
 appConfig:
   theme: colorful
-
-# Main content - An array of sections, each containing an array of items
+  layout: horizontal
+  iconSize: medium
 sections:
-- name: Getting Started
-  icon: fas fa-rocket
-  items:
-  - title: Dashy Live
-    description: Development a project management links for Dashy
-    icon: https://i.ibb.co/qWWpD0v/astro-dab-128.png
-    url: https://live.dashy.to/
-    target: newtab
-  - title: GitHub
-    description: Source Code, Issues and Pull Requests
-    url: https://github.com/lissy93/dashy
-    icon: favicon
-  - title: Docs
-    description: Configuring & Usage Documentation
-    provider: Dashy.to
-    icon: far fa-book
-    url: https://dashy.to/docs
-  - title: Showcase
-    description: See how others are using Dashy
-    url: https://github.com/Lissy93/dashy/blob/master/docs/showcase.md
-    icon: far fa-grin-hearts
-  - title: Config Guide
-    description: See full list of configuration options
-    url: https://github.com/Lissy93/dashy/blob/master/docs/configuring.md
-    icon: fas fa-wrench
-  - title: Support
-    description: Get help with Dashy, raise a bug, or get in contact
-    url: https://github.com/Lissy93/dashy/blob/master/.github/SUPPORT.md
-    icon: far fa-hands-helping
-  
+  - name: Getting Started
+    icon: fas fa-rocket
+    items:
+      - title: Dashy Live
+        description: Development a project management links for Dashy
+        icon: https://i.ibb.co/qWWpD0v/astro-dab-128.png
+        url: https://live.dashy.to/
+        target: newtab
+        id: 0_1481_dashylive
+      - title: GitHub
+        description: Source Code, Issues and Pull Requests
+        url: https://github.com/lissy93/dashy
+        icon: favicon
+        id: 1_1481_github
+      - title: Docs
+        description: Configuring & Usage Documentation
+        provider: Dashy.to
+        icon: far fa-book
+        url: https://dashy.to/docs
+        id: 2_1481_docs
+      - title: Showcase
+        description: See how others are using Dashy
+        url: https://github.com/Lissy93/dashy/blob/master/docs/showcase.md
+        icon: far fa-grin-hearts
+        id: 3_1481_showcase
+      - title: Config Guide
+        description: See full list of configuration options
+        url: https://github.com/Lissy93/dashy/blob/master/docs/configuring.md
+        icon: fas fa-wrench
+        id: 4_1481_configguide
+      - title: Support
+        description: Get help with Dashy, raise a bug, or get in contact
+        url: https://github.com/Lissy93/dashy/blob/master/.github/SUPPORT.md
+        icon: far fa-hands-helping
+        id: 5_1481_support
+  - name: Tretflix
+    icon: mdi-multimedia
+    items:
+      - title: Files
+        icon: far fa-folder-tree
+        url: https://tret.jain.se/files/
+        id: 2_365_files
+      - title: SABnzbd
+        icon: hl-sabnzbd
+        url: https://tret.jain.se/sabnzbd/
+        target: newtab
+        id: 1_365_sabnzbd
+      - title: Sonarr
+        icon: hl-sonarr
+        url: https://tret.jain.se/sonarr/calendar
+        target: newtab
+        id: 3_365_sonarr
+      - title: Radarr
+        url: https://tret.jain.se/radarr/
+        icon: hl-radarr
+        id: 6_365_radarr
+      - title: TV
+        icon: fas fa-video
+        url: https://tret.jain.se/files/TV/
+        target: newtab
+        id: 4_365_tv
+      - title: Movies
+        icon: fas fa-film
+        url: https://tret.jain.se/files/Movies/
+        target: newtab
+        id: 5_365_movies
+  - name: SRV78 - Internal
+    icon: fas fa-server
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: Portainer
+        icon: hl-portainer
+        url: http://jain78:9000/
+        id: 0_362_portainer
+      - title: Files
+        icon: far fa-folder-tree
+        url: http://srv78:18000/files/
+        id: 2_362_files
+      - title: File Browser
+        icon: hl-filebrowser
+        url: http://srv78:8080/filebrowser/
+        id: 7_362_filebrowser
+      - title: SABnzbd
+        icon: hl-sabnzbd
+        url: http://srv78:18000/sabnzbd/
+        target: newtab
+        id: 1_362_sabnzbd
+      - title: Sonarr
+        icon: hl-sonarr
+        url: http://srv78:18000/sonarr/calendar
+        target: newtab
+        id: 3_362_sonarr
+      - title: Radarr
+        url: http://srv78:18000/radarr/
+        icon: hl-radarr
+        id: 6_362_radarr
+      - title: TV
+        icon: fas fa-video
+        url: http://srv78:18000/files/TV/
+        target: newtab
+        id: 4_362_tv
+      - title: Movies
+        icon: fas fa-film
+        url: http://srv78:18000/files/Movies/
+        target: newtab
+        id: 5_362_movies
+  - name: PiGallery - External
+    icon: fab fa-raspberry-pi
+    displayData:
+      sortBy: alphabetical
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: .Main
+        icon: fab fa-raspberry-pi
+        url: https://photos.jain.se/
+        id: 0_1849_main
+      - title: Unsorted
+        icon: fab fa-raspberry-pi
+        url: https://photos.jain.se/unsorted/gallery/
+        id: 1_1849_unsorted
+      - title: 2023-10 Tanzania
+        icon: fab fa-raspberry-pi
+        url: https://photos.jain.se/2310-tanzania/gallery/
+        id: 2_1849_tanzania
+      - title: 2024-02 Wedding Harsh & Shagun
+        icon: fab fa-raspberry-pi
+        url: https://photos.jain.se/2402-kolkata/gallery/
+        id: 3_1849_weddingharshshagun
+      - title: 2023-11 Comic Con Stockhlm
+        icon: fab fa-raspberry-pi
+        url: https://photos.jain.se/2311-comiccon/gallery/
+        id: 4_1849_comicconstockhlm
+      - title: 2024-03 Malmö & København
+        icon: fab fa-raspberry-pi
+        url: https://photos.jain.se/2403-mmxcph/gallery/
+        id: 5_1849_malmkbenhavn
+      - title: E-jolle Elitserie 2023/2024
+        icon: fab fa-raspberry-pi
+        url: https://photos.jain.se/2324-ejolle-elitserie/gallery/
+        id: 6_1849_ejolleelitserie
+  - name: PiGallery - Internal
+    icon: fab fa-raspberry-pi
+    displayData:
+      sortBy: alphabetical
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: .Main
+        icon: fab fa-raspberry-pi
+        url: http://srv78:12401/gallery/
+        id: 0_1843_main
+      - title: Unsorted
+        icon: fab fa-raspberry-pi
+        url: http://srv78:12400/unsorted/gallery/
+        id: 1_1843_unsorted
+      - title: 2023-10 Tanzania
+        icon: fab fa-raspberry-pi
+        url: http://srv78:12400/2310-tanzania/gallery/
+        id: 2_1843_tanzania
+      - title: 2024-02 Wedding Harsh & Shagun
+        icon: fab fa-raspberry-pi
+        url: http://srv78:12400/2402-kolkata/gallery/
+        id: 3_1843_weddingharshshagun
+      - title: 2023-11 Comic Con Stockhlm
+        icon: fab fa-raspberry-pi
+        url: http://srv78:12400/2311-comiccon/gallery/
+        id: 4_1843_comicconstockhlm
+      - title: 2024-03 Malmö & København
+        icon: fab fa-raspberry-pi
+        url: http://srv78:12400/2403-mmxcph/gallery/
+        id: 5_1843_malmkbenhavn
+      - title: E-jolle Elitserie 2023/2024
+        icon: fab fa-raspberry-pi
+        url: http://srv78:12400/2324-ejolle-elitserie/gallery/
+        id: 6_1843_ejolleelitserie
