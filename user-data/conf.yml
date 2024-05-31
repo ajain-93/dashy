@@ -1,34 +1,97 @@
 pageInfo:
   title: Dashy
-  description: Arnav Jain
+  description: Starup page for Arnav Jain
   navLinks:
     - title: Documentation
       path: https://dashy.to/docs
       target: newtab
+    - title: Icons support
+      path: https://github.com/ajain-93/dashy/blob/master/docs/icons.md
+      target: newtab
 appConfig:
-  theme: colorful
-  layout: vertical
+  theme: one-dark
+  layout: horizontal
   iconSize: large
 sections:
+  - name: General
+    icon: mdi-cog
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: true
+      hideForGuests: false
+    items:
+      - title: Mail
+        description: Jain.se Mail
+        icon: si-gmail
+        url: https://mail.google.com/mail/u/0/?shva=1#inbox
+        id: 0_702_mail
+      - title: Calendar
+        description: Jain.se Calendar
+        icon: si-googlecalendar
+        url: https://calendar.google.com/calendar/render
+        id: 1_702_calendar
+      - title: Feedly
+        description: RSS News Reader
+        icon: si-feedly
+        url: https://feedly.com/
+        id: 2_702_feedly
+      - title: Arnav Jain
+        description: Arnav.Jain.se
+        icon: favicon
+        url: https://arnav.jain.se/
+        id: 3_702_arnavjain
+  - name: Hitachi Energy
+    icon: si-hitachi
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: true
+      hideForGuests: false
+    items:
+      - title: TimeSheet
+        description: Google Sheets
+        icon: mdi-calendar-clock
+        url: >-
+          https://docs.google.com/spreadsheets/d/1DNMWcCEVX-25DONdfpcp9eqhwaJALaZzA2EB1d7uxSY/edit#gid=1646908584
+        id: 0_1348_timesheet
+      - title: eTime
+        description: Submit timesheet
+        icon: mdi-clock-end
+        url: >-
+          https://myapps.microsoft.com/signin/3040834b-1864-4327-a365-00d052b5d985?tenantId=7831e6d9-dc6c-4cd1-9ec6-1dc2b4133195
+        id: 1_1348_etime
+      - title: Outlook
+        description: Outlook Mail
+        icon: si-microsoftoutlook
+        url: https://outlook.office365.com/mail/
+        id: 2_1348_outlook
+      - title: Calendar
+        description: Outlook Calendar
+        icon: mdi-calendar-month
+        url: https://outlook.office365.com/calendar/
+        id: 3_1348_calendar
   - name: Media
     icon: mdi-multimedia
     items:
-      - title: Just Watch
-        icon: si-trillertv
-        url: https://www.justwatch.com/se
-        id: 0_480_justwatch
       - title: MyEpisodes
         icon: mdi-television
         url: https://www.myepisodes.com/
-        id: 1_480_myepisodes
+        id: 0_480_myepisodes
+      - title: Just Watch
+        icon: si-trillertv
+        url: https://www.justwatch.com/se
+        id: 1_480_justwatch
       - title: Sonarr
         icon: hl-sonarr
         url: https://tret.jain.se/sonarr/calendar
         target: newtab
         id: 2_480_sonarr
       - title: Radarr
-        url: https://tret.jain.se/radarr/
         icon: hl-radarr
+        url: https://tret.jain.se/radarr/
         id: 3_480_radarr
       - title: TV
         icon: fas fa-video
@@ -44,99 +107,186 @@ sections:
         icon: far fa-folder-tree
         url: https://tret.jain.se/files/
         id: 6_480_files
-      - title: MyEpisodes
-        icon: mdi-television
-        url: https://www.myepisodes.com/
-        id: 7_480_myepisodes
       - title: SABnzbd
         icon: hl-sabnzbd
         url: https://tret.jain.se/sabnzbd/
         target: newtab
-        id: 8_480_sabnzbd
+        id: 7_480_sabnzbd
+      - title: Jellyfin
+        description: SRV78
+        icon: si-jellyfin
+        url: https://jelly.jain.se/jellyfin/web/index.html
+        id: 8_480_jellyfin
     displayData:
       sortBy: default
       rows: 1
       cols: 1
-      collapsed: false
+      collapsed: true
       hideForGuests: false
   - name: PiGallery
     icon: fab fa-raspberry-pi
     displayData:
-      sortBy: alphabetical
+      sortBy: default
       rows: 1
       cols: 1
-      collapsed: false
+      collapsed: true
       hideForGuests: false
     items:
-      - title: .Main
+      - title: Photos
+        description: All photos
         icon: fab fa-raspberry-pi
         url: https://photos.jain.se/
-        id: 0_1849_main
+        id: 0_905_photos
+      - title: Tanzania
+        description: 2023-10 Tanzania
+        icon: fab fa-raspberry-pi
+        url: https://photos.jain.se/2310-tanzania/gallery/
+        id: 1_905_tanzania
+      - title: Wedding Harsh
+        description: 2024-02 Wedding Harsh & Shagun
+        icon: fab fa-raspberry-pi
+        url: https://photos.jain.se/2402-kolkata/gallery/
+        id: 2_905_weddingharsh
+      - title: Comic Con '23
+        description: 2023-11 Comic Con Stockhlm
+        icon: fab fa-raspberry-pi
+        url: https://photos.jain.se/2311-comiccon/gallery/
+        id: 3_905_comiccon
+      - title: Easter Trip
+        description: 2024-03 Malmö & København
+        icon: fab fa-raspberry-pi
+        url: https://photos.jain.se/2403-mmxcph/gallery/
+        id: 4_905_eastertrip
+      - title: Elitserie 23/24
+        description: E-jolle Elitserie 2023/2024
+        icon: fab fa-raspberry-pi
+        url: https://photos.jain.se/2324-ejolle-elitserie/gallery/
+        id: 5_905_elitserie
       - title: Unsorted
         icon: fab fa-raspberry-pi
         url: https://photos.jain.se/unsorted/gallery/
-        id: 1_1849_unsorted
-      - title: 2023-10 Tanzania
+        id: 6_905_unsorted
+      - title: Photos
+        description: Internal Link
         icon: fab fa-raspberry-pi
-        url: https://photos.jain.se/2310-tanzania/gallery/
-        id: 2_1849_tanzania
-      - title: 2024-02 Wedding Harsh & Shagun
+        url: http://srv78:12401/gallery/
+        id: 7_905_photos
+      - title: Galleries
+        description: Internal Link - Apply folder from external links
         icon: fab fa-raspberry-pi
-        url: https://photos.jain.se/2402-kolkata/gallery/
-        id: 3_1849_weddingharshshagun
-      - title: 2023-11 Comic Con Stockhlm
-        icon: fab fa-raspberry-pi
-        url: https://photos.jain.se/2311-comiccon/gallery/
-        id: 4_1849_comicconstockhlm
-      - title: 2024-03 Malmö & København
-        icon: fab fa-raspberry-pi
-        url: https://photos.jain.se/2403-mmxcph/gallery/
-        id: 5_1849_malmkbenhavn
-      - title: E-jolle Elitserie 2023/2024
-        icon: fab fa-raspberry-pi
-        url: https://photos.jain.se/2324-ejolle-elitserie/gallery/
-        id: 6_1849_ejolleelitserie
-
+        url: http://srv78:12400/unsorted/gallery/
+        id: 8_905_galleries
   - name: Home Automation
     icon: si-homeassistant
     displayData:
       sortBy: default
       rows: 1
       cols: 1
-      collapsed: false
+      collapsed: true
       hideForGuests: false
     items:
       - title: Main
-        description: Home Assistant Bridge
+        description: Raspberry Pi Bridge
         icon: si-homeassistant
         url: https://ha.jain.se/lovelace/home
         id: 0_1482_main
       - title: Main - Internal
-        description: Home Assistant Bridge
+        description: Raspberry Pi Bridge
         icon: mdi-home-assistant
         url: http://ha-bridge:8123/
         id: 1_1482_maininternal
-      - title: 🚗
-        description: Home Assistant Azure Docker
+      - title: Azure
+        description: HE Azure Docker
         icon: si-homeassistant
         url: https://ha-az-he.jain.se/lovelace/car
-        id: 2_1482_
+        id: 2_1482_azure
       - title: Zigbee2MQTT
         icon: mdi-zigbee
+        description: Raspberry Pi Bridge - Internal
         url: http://ha-bridge:8585/#/
         id: 3_1482_zigbeemqtt
       - title: Z-Wave JS
         icon: mdi-z-wave
+        description: Raspberry Pi Bridge - Internal
         url: http://ha-bridge:8091/#/control-panel
         id: 4_1482_zwavejs
-
+  - name: External Services
+    icon: far fa-server
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: true
+      hideForGuests: false
+    items:
+      - title: RSS Bridge
+        description: SRV78
+        icon: si-rss
+        url: https://rss.jain.se/
+        id: 0_1703_rssbridge
+      - title: Calibre Web
+        description: SRV78
+        icon: mdi-bookshelf
+        url: https://books.jain.se/
+        id: 1_1703_calibreweb
+      - title: Firefox
+        description: SRV78
+        icon: si-firefox
+        url: https://ws-aj.jain.se/
+        id: 2_1703_firefox
+      - title: Jellyfin
+        description: SRV78
+        icon: si-jellyfin
+        url: '#link-8_480_jellyfin'
+        target: sametab
+        id: 3_1703_jellyfin
+  - name: Internal Services
+    icon: fas fa-server
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: true
+      hideForGuests: false
+    items:
+      - title: Tret
+        description: SRV78
+        icon: far fa-folder-tree
+        url: http://srv78:18000/files/
+        id: 0_1697_tret
+      - title: File Browser
+        description: SRV78
+        icon: hl-filebrowser
+        url: http://srv78:8080/filebrowser/
+        id: 1_1697_filebrowser
+      - title: Dashy
+        description: SRV78
+        icon: fas fa-rocket
+        url: http://srv78:8065
+        id: 2_1697_dashy
+      - title: PiGallery2
+        description: SRV78
+        icon: si-raspberrypi
+        url: '#link-7_905_photos'
+        target: sametab
+        id: 3_1697_pigallery
+      - title: Glances
+        description: SRV78
+        icon: mdi-monitor-eye
+        url: http://srv78:61208/
+        id: 4_1697_glances
+      - title: Glances
+        description: HA-Bridge
+        icon: mdi-monitor-eye
+        url: http://ha-bridge:61208/
+        id: 5_1697_glances
   - name: Docker
     icon: si-portainer
     displayData:
       sortBy: default
       rows: 1
       cols: 1
-      collapsed: false
+      collapsed: true
       hideForGuests: false
     items:
       - title: HA Bridge
@@ -152,84 +302,3 @@ sections:
         icon: mdi-microsoft-azure
         url: https://portainer-az-he.jain.se/
         id: 2_600_azure
-
-
-  - name: SRV78 - Internal
-    icon: fas fa-server
-    displayData:
-      sortBy: default
-      rows: 1
-      cols: 1
-      collapsed: false
-      hideForGuests: false
-    items:
-      - title: Files
-        icon: far fa-folder-tree
-        url: http://srv78:18000/files/
-        id: 0_1300_files
-      - title: File Browser
-        icon: hl-filebrowser
-        url: http://srv78:8080/filebrowser/
-        id: 1_1300_filebrowser
-      - title: SABnzbd
-        icon: hl-sabnzbd
-        url: http://srv78:18000/sabnzbd/
-        target: newtab
-        id: 2_1300_sabnzbd
-      - title: Sonarr
-        icon: hl-sonarr
-        url: http://srv78:18000/sonarr/calendar
-        target: newtab
-        id: 3_1300_sonarr
-      - title: Radarr
-        url: http://srv78:18000/radarr/
-        icon: hl-radarr
-        id: 4_1300_radarr
-      - title: TV
-        icon: fas fa-video
-        url: http://srv78:18000/files/TV/
-        target: newtab
-        id: 5_1300_tv
-      - title: Movies
-        icon: fas fa-film
-        url: http://srv78:18000/files/Movies/
-        target: newtab
-        id: 6_1300_movies
-
-  - name: PiGallery - Internal
-    icon: fab fa-raspberry-pi
-    displayData:
-      sortBy: alphabetical
-      rows: 1
-      cols: 1
-      collapsed: false
-      hideForGuests: false
-    items:
-      - title: .Main
-        icon: fab fa-raspberry-pi
-        url: http://srv78:12401/gallery/
-        id: 0_1843_main
-      - title: Unsorted
-        icon: fab fa-raspberry-pi
-        url: http://srv78:12400/unsorted/gallery/
-        id: 1_1843_unsorted
-      - title: 2023-10 Tanzania
-        icon: fab fa-raspberry-pi
-        url: http://srv78:12400/2310-tanzania/gallery/
-        id: 2_1843_tanzania
-      - title: 2024-02 Wedding Harsh & Shagun
-        icon: fab fa-raspberry-pi
-        url: http://srv78:12400/2402-kolkata/gallery/
-        id: 3_1843_weddingharshshagun
-      - title: 2023-11 Comic Con Stockhlm
-        icon: fab fa-raspberry-pi
-        url: http://srv78:12400/2311-comiccon/gallery/
-        id: 4_1843_comicconstockhlm
-      - title: 2024-03 Malmö & København
-        icon: fab fa-raspberry-pi
-        url: http://srv78:12400/2403-mmxcph/gallery/
-        id: 5_1843_malmkbenhavn
-      - title: E-jolle Elitserie 2023/2024
-        icon: fab fa-raspberry-pi
-        url: http://srv78:12400/2324-ejolle-elitserie/gallery/
-        id: 6_1843_ejolleelitserie
