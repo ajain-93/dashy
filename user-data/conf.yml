@@ -81,53 +81,56 @@ sections:
     icon: mdi-multimedia
     items:
       - title: MyEpisodes
+        description: TV Episodes Tracker
         icon: mdi-television
         url: https://www.myepisodes.com/
         id: 0_480_myepisodes
       - title: Just Watch
+        description: Where to watch
         icon: si-trillertv
         url: https://www.justwatch.com/se
         id: 1_480_justwatch
       - title: Sonarr
+        description: Tret
         icon: hl-sonarr
         url: https://tret.jain.se/sonarr/calendar
         target: newtab
         id: 2_480_sonarr
       - title: Radarr
+        description: Tret
         icon: hl-radarr
         url: https://tret.jain.se/radarr/
         id: 3_480_radarr
       - title: TV
+        description: Tret
         icon: fas fa-video
         url: https://tret.jain.se/files/TV/
         target: newtab
         id: 4_480_tv
       - title: Movies
+        description: Tret
         icon: fas fa-film
         url: https://tret.jain.se/files/Movies/
         target: newtab
         id: 5_480_movies
-      - title: Files
-        icon: far fa-folder-tree
-        url: https://tret.jain.se/files/
-        id: 6_480_files
       - title: SABnzbd
+        description: Tret
         icon: hl-sabnzbd
         url: https://tret.jain.se/sabnzbd/
         target: newtab
-        id: 7_480_sabnzbd
+        id: 6_480_sabnzbd
       - title: Jellyfin
         description: SRV78
         icon: si-jellyfin
         url: https://jelly.jain.se/jellyfin/web/index.html
-        id: 8_480_jellyfin
+        id: 7_480_jellyfin
     displayData:
       sortBy: default
       rows: 1
       cols: 1
       collapsed: true
       hideForGuests: false
-  - name: PiGallery
+  - name: PiGallery2
     icon: fab fa-raspberry-pi
     displayData:
       sortBy: default
@@ -140,46 +143,46 @@ sections:
         description: All photos
         icon: fab fa-raspberry-pi
         url: https://photos.jain.se/
-        id: 0_905_photos
+        id: 0_955_photos
       - title: Tanzania
         description: 2023-10 Tanzania
         icon: fab fa-raspberry-pi
         url: https://photos.jain.se/2310-tanzania/gallery/
-        id: 1_905_tanzania
+        id: 1_955_tanzania
       - title: Wedding Harsh
         description: 2024-02 Wedding Harsh & Shagun
         icon: fab fa-raspberry-pi
         url: https://photos.jain.se/2402-kolkata/gallery/
-        id: 2_905_weddingharsh
+        id: 2_955_weddingharsh
       - title: Comic Con '23
         description: 2023-11 Comic Con Stockhlm
         icon: fab fa-raspberry-pi
         url: https://photos.jain.se/2311-comiccon/gallery/
-        id: 3_905_comiccon
+        id: 3_955_comiccon
       - title: Easter Trip
         description: 2024-03 Malmö & København
         icon: fab fa-raspberry-pi
         url: https://photos.jain.se/2403-mmxcph/gallery/
-        id: 4_905_eastertrip
+        id: 4_955_eastertrip
       - title: Elitserie 23/24
         description: E-jolle Elitserie 2023/2024
         icon: fab fa-raspberry-pi
         url: https://photos.jain.se/2324-ejolle-elitserie/gallery/
-        id: 5_905_elitserie
+        id: 5_955_elitserie
       - title: Unsorted
         icon: fab fa-raspberry-pi
         url: https://photos.jain.se/unsorted/gallery/
-        id: 6_905_unsorted
+        id: 6_955_unsorted
       - title: Photos
         description: Internal Link
         icon: fab fa-raspberry-pi
         url: http://srv78:12401/gallery/
-        id: 7_905_photos
+        id: 7_955_photos
       - title: Galleries
         description: Internal Link - Apply folder from external links
         icon: fab fa-raspberry-pi
         url: http://srv78:12400/unsorted/gallery/
-        id: 8_905_galleries
+        id: 8_955_galleries
   - name: Home Automation
     icon: si-homeassistant
     displayData:
@@ -214,10 +217,15 @@ sections:
         description: Raspberry Pi Bridge - Internal
         url: http://ha-bridge:8091/#/control-panel
         id: 4_1482_zwavejs
+      - title: Node-Red
+        description: Raspberry Pi Bridge
+        icon: si-nodered
+        url: http://ha-bridge:1880/
+        id: 5_1482_nodered
   - name: External Services
     icon: far fa-server
     displayData:
-      sortBy: default
+      sortBy: alphabetical
       rows: 1
       cols: 1
       collapsed: true
@@ -241,13 +249,18 @@ sections:
       - title: Jellyfin
         description: SRV78
         icon: si-jellyfin
-        url: '#link-8_480_jellyfin'
+        url: '#link-7_480_jellyfin'
         target: sametab
         id: 3_1703_jellyfin
+      - title: Uptime Kuma
+        description: HE Azure Docker
+        icon: si-uptimekuma
+        url: https://uptime-az-he.jain.se/
+        id: 4_1703_uptimekuma
   - name: Internal Services
     icon: fas fa-server
     displayData:
-      sortBy: default
+      sortBy: alphabetical
       rows: 1
       cols: 1
       collapsed: true
@@ -284,6 +297,11 @@ sections:
         icon: mdi-monitor-eye
         url: http://ha-bridge:61208/
         id: 5_1697_glances
+      - title: Uptime Kuma
+        description: Raspberry Pi Bridge
+        icon: si-uptimekuma
+        url: http://ha-bridge:3001/
+        id: 6_1697_uptimekuma
   - name: Docker
     icon: si-portainer
     displayData:
@@ -294,22 +312,24 @@ sections:
       hideForGuests: false
     items:
       - title: HA Bridge
-        description: ''
+        description: Raspberry Pi Bridge
         icon: mdi-raspberry-pi
         url: http://ha-bridge:9000/
         id: 0_600_habridge
       - title: SRV78
+        description: SRV78
         icon: mdi-server-network
         url: http://jain78:9000/
         id: 1_600_srv
       - title: Azure
+        description: HE Azure Docker
         icon: mdi-microsoft-azure
         url: https://portainer-az-he.jain.se/
         id: 2_600_azure
   - name: Maps
     icon: mdi-map
     displayData:
-      sortBy: default
+      sortBy: alphabetical
       rows: 1
       cols: 1
       collapsed: true
@@ -318,11 +338,11 @@ sections:
       - title: Google
         description: Google Maps
         icon: si-googlemaps
-        url: https://www.google.com/maps/search//
+        url: https://www.google.com/maps/
         id: 0_401_google
       - title: Min Karta
         description: Lantmäteriet
-        icon: favicon
+        icon: mdi-map
         url: https://minkarta.lantmateriet.se/
         id: 1_401_minkarta
       - title: Sjökort
@@ -332,6 +352,21 @@ sections:
         id: 2_401_sjkort
       - title: Sjökort
         description: Eniro
-        icon: favicon
+        icon: mdi-waves
         url: https://kartor.eniro.se/s%C3%B6k/sj%C3%B6kort
         id: 3_401_sjkort
+      - title: Drone Chart
+        description: Luftfartsverket
+        icon: mdi-drone
+        url: https://dronechart.lfv.se/
+        id: 4_401_dronechart
+      - title: OSM
+        description: Open Street Map
+        icon: si-openstreetmap
+        url: https://www.openstreetmap.org
+        id: 5_401_osm
+      - title: Shademap
+        description: Shademap
+        icon: mdi-map-clock
+        url: https://shademap.app
+        id: 6_401_shademap
