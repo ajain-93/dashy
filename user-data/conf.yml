@@ -2,11 +2,14 @@ pageInfo:
   title: Dashy
   description: Starup page for Arnav Jain
   navLinks:
-    - title: Documentation
+    - title: Docs
       path: https://dashy.to/docs
       target: newtab
-    - title: Icons support
+    - title: Icons
       path: https://github.com/ajain-93/dashy/blob/master/docs/icons.md
+      target: newtab
+    - title: Arnav Jain
+      path: https://arnav.jain.se
       target: newtab
 appConfig:
   theme: one-dark
@@ -37,11 +40,12 @@ sections:
         icon: si-feedly
         url: https://feedly.com/
         id: 2_702_feedly
-      - title: Arnav Jain
-        description: Arnav.Jain.se
-        icon: favicon
-        url: https://arnav.jain.se/
-        id: 3_702_arnavjain
+      - title: YR
+        description: YR.no Ludvika
+        icon: si-yr
+        url: >-
+          https://www.yr.no/en/forecast/daily-table/2-2693759/Sweden/Dalarna/Ludvika%20Municipality/Ludvika
+        id: 3_702_yr
   - name: Hitachi Energy
     icon: si-hitachi
     displayData:
@@ -302,3 +306,32 @@ sections:
         icon: mdi-microsoft-azure
         url: https://portainer-az-he.jain.se/
         id: 2_600_azure
+  - name: Maps
+    icon: mdi-map
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: true
+      hideForGuests: false
+    items:
+      - title: Google
+        description: Google Maps
+        icon: si-googlemaps
+        url: https://www.google.com/maps/search//
+        id: 0_401_google
+      - title: Min Karta
+        description: Lantmäteriet
+        icon: favicon
+        url: https://minkarta.lantmateriet.se/
+        id: 1_401_minkarta
+      - title: Sjökort
+        description: Sjöfartsverket
+        icon: mdi-waves
+        url: https://geokatalog.sjofartsverket.se/kartvisarefyren/
+        id: 2_401_sjkort
+      - title: Sjökort
+        description: Eniro
+        icon: favicon
+        url: https://kartor.eniro.se/s%C3%B6k/sj%C3%B6kort
+        id: 3_401_sjkort
