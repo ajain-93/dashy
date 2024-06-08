@@ -95,11 +95,18 @@ sections:
         icon: hl-sonarr
         url: https://tret.jain.se/sonarr/calendar
         target: newtab
+        statusCheck: true
+        statusCheckUrl: >-
+          http://srv78:18000/sonarr/api/v3/system/status?apikey=b1cd45de638f4cf4ba0d410c9427226d
         id: 2_480_sonarr
       - title: Radarr
         description: Tret
         icon: hl-radarr
         url: https://tret.jain.se/radarr/
+        statusCheck: true
+        statusCheckUrl: >-
+          http://srv78:18000/radarr/api/v3/system/status?apikey=bd38478d474540a5a5abe995b03ef098
+        statusCheckAllowInsecure: true
         id: 3_480_radarr
       - title: TV
         description: Tret
@@ -118,6 +125,10 @@ sections:
         icon: hl-sabnzbd
         url: https://tret.jain.se/sabnzbd/
         target: newtab
+        statusCheck: true
+        statusCheckUrl: >-
+          http://srv78:18000/sabnzbd/api?output=json&apikey=0a49206a8e376edd72ff9659a4afe7f7&mode=status&skip_dashboard=1
+        statusCheckAllowInsecure: true
         id: 6_480_sabnzbd
       - title: Jellyfin
         description: SRV78
@@ -196,11 +207,21 @@ sections:
         description: Raspberry Pi Bridge
         icon: si-homeassistant
         url: https://ha.jain.se/lovelace/home
+        statusCheck: true
+        statusCheckUrl: https://ha.jain.se/api/
+        statusCheckHeaders: >-
+          Authorization: Bearer
+          eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjNDFiOTZlYzYxZTQ0YjMyOWJjMTJmZjhmYzQ1ZTMyOSIsImlhdCI6MTcxNzQxMjYwMCwiZXhwIjoyMDMyNzcyNjAwfQ.v7iompK8O-DDYB2Ol-sriN5vugMU_GSzBiwL7f4i280
         id: 0_1482_main
       - title: Main - Internal
         description: Raspberry Pi Bridge
         icon: mdi-home-assistant
         url: http://ha-bridge:8123/
+        statusCheck: true
+        statusCheckUrl: http://ha-bridge:8123/api/
+        statusCheckHeaders: >-
+          Authorization: Bearer
+          eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjNDFiOTZlYzYxZTQ0YjMyOWJjMTJmZjhmYzQ1ZTMyOSIsImlhdCI6MTcxNzQxMjYwMCwiZXhwIjoyMDMyNzcyNjAwfQ.v7iompK8O-DDYB2Ol-sriN5vugMU_GSzBiwL7f4i280
         id: 1_1482_maininternal
       - title: Azure
         description: HE Azure Docker
@@ -235,22 +256,26 @@ sections:
         description: SRV78
         icon: si-rss
         url: https://rss.jain.se/
+        statusCheck: true
         id: 0_1703_rssbridge
       - title: Calibre Web
         description: SRV78
         icon: mdi-bookshelf
         url: https://books.jain.se/
+        statusCheck: true
         id: 1_1703_calibreweb
       - title: Firefox
         description: SRV78
         icon: si-firefox
         url: https://ws-aj.jain.se/
+        statusCheck: true
         id: 2_1703_firefox
       - title: Jellyfin
         description: SRV78
         icon: si-jellyfin
         url: '#link-7_480_jellyfin'
         target: sametab
+        statusCheck: true
         id: 3_1703_jellyfin
       - title: Uptime Kuma
         description: HE Azure Docker
@@ -275,27 +300,32 @@ sections:
         description: SRV78
         icon: hl-filebrowser
         url: http://srv78:8080/filebrowser/
+        statusCheck: true
         id: 1_1697_filebrowser
       - title: Dashy
         description: SRV78
         icon: fas fa-rocket
         url: http://srv78:8065
+        statusCheck: true
         id: 2_1697_dashy
       - title: PiGallery2
         description: SRV78
         icon: si-raspberrypi
         url: '#link-7_905_photos'
         target: sametab
+        statusCheck: true
         id: 3_1697_pigallery
       - title: Glances
         description: SRV78
         icon: mdi-monitor-eye
         url: http://srv78:61208/
+        statusCheck: true
         id: 4_1697_glances
       - title: Glances
         description: HA-Bridge
         icon: mdi-monitor-eye
         url: http://ha-bridge:61208/
+        statusCheck: true
         id: 5_1697_glances
       - title: Uptime Kuma
         description: Raspberry Pi Bridge
