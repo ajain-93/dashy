@@ -135,6 +135,15 @@ sections:
         icon: si-jellyfin
         url: https://jelly.jain.se/jellyfin/web/index.html
         id: 7_480_jellyfin
+      - title: Bazarr
+        description: Tret
+        icon: hl-bazarr
+        url: https://tret.jain.se/bazarr/
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: >-
+          https://tret.jain.se/bazarr/api/system/status?apikey=5364922ac36def5eea67454030c2309b
+        id: 8_480_bazarr
     displayData:
       sortBy: default
       rows: 1
